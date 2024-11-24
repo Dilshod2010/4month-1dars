@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px ;
+}
+.box2{
+    width: 100px ;
+    height: 100px ;
+    background-color: red;
+    border: 2px solid black;
+}
+.box{
+    width: 100px ;
+    height: 100px ;
+    background-color: blueviolet;
+    border: 2px solid black;
+}
+@media only screen and (max-width: 1200px){
+    .wrapper{
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (min-width:908px){
+    .box2{
+        display: none;
+    }
+}
